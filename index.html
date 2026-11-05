@@ -13,8 +13,18 @@
   <title>Frontend Mentor | QR code component</title>
 
   <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution { 
+      font-size: 0.6875rem; 
+      text-align: center; 
+      position: fixed;
+      bottom: 5vh;
+    }
+    .attribution a { 
+      color: hsl(228, 45%, 44%); 
+    }
+    .attribution a:hover {
+      color: red;
+    }
 
     body {
       background-color: hsl(212, 45%, 89%);
@@ -22,18 +32,14 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
       padding: 0;
       margin: 0;
+      min-height: 100vh;
     }
 
     p {
       margin: 0;
-    }
-
-    .vertical-centering {
-      height: 90vh;
-      display: flex;
-      align-items: center;
     }
 
     .qr-div {
@@ -75,23 +81,21 @@
 </head>
 <body>
 
-  <div class="vertical-centering">
-    <div class="qr-div">
-      <img src="images/image-qr-code.png" alt="" id="qr-code-image">
-      <div class="info">
-        <h2 class="tagline">
-          Improve your front-end <br> skills by building projects
-        </h2>
-        <p class="call-to-action">
-          Scan the QR code to visit Frontend <br> Mentor and take your coding skills to <br> the next level
-        </p>
-      </div>
+  <div class="qr-div">
+    <img src="images/image-qr-code.png" alt="" id="qr-code-image">
+    <div class="info">
+      <h2 class="tagline">
+        Improve your front-end <br> skills by building projects
+      </h2>
+      <p class="call-to-action">
+        Scan the QR code to visit Frontend <br> Mentor and take your coding skills to <br> the next level
+      </p>
     </div>
   </div>
   
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/new-git-stack">Obeten Samuel</a>.
   </footer>
 </body>
 </html>
